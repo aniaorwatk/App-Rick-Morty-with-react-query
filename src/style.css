@@ -1,0 +1,22 @@
+#item {
+    margin: 1px;
+    padding: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.list{
+    display: flex;
+}
+
+.card{
+    align-self: center;
+}
