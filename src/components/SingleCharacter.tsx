@@ -6,15 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Character } from "./List";
 
-// interface ISinglePageType {
-//     id: number,
-//     name: string,
-//     image: string,
-//     pages: number,
-//     status: string,
-//     species: string,
-// }
-
 const SinglePage = () => {
     const para = useParams()
     const [dataCharacter, setDataCharacter] = useState<Character>()
