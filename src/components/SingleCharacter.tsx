@@ -4,20 +4,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Character } from "./List";
-
-// interface ISinglePageType {
-//     id: number,
-//     name: string,
-//     image: string,
-//     pages: number,
-//     status: string,
-//     species: string,
-// }
+import { ITypeCharacter } from "./List";
 
 const SinglePage = () => {
     const para = useParams()
-    const [dataCharacter, setDataCharacter] = useState<Character>()
+    const [dataCharacter, setDataCharacter] = useState<ITypeCharacter>()
 
     useEffect(() => {
         const apiUser = async () => {

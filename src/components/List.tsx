@@ -6,7 +6,7 @@ import { Avatar, ListItemAvatar } from "@mui/material";
 import Pagination from "./Pagination";
 import "../style.css";
 
-export interface Character {
+export interface ITypeCharacter {
     id: number,
     name: string,
     image: string,
@@ -17,7 +17,7 @@ export interface Character {
 
 const List = () => {
 
-    const [dataList, setDataList] = useState<Character[]>([])
+    const [dataList, setDataList] = useState<ITypeCharacter[]>([])
     const [numberPage, setNumberPage] = useState(1)
     const [totalPages, setTotalPages] = useState(0)
 

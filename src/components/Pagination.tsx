@@ -15,24 +15,26 @@ const Pagination = ({ setNumberPage, numberPage, totalPages }: IPaginationTyp) =
         setNumberPage((prevNumberPage: number) => prevNumberPage - 1)
     }
 
-    const up = () => { 
-        if(numberPage < totalPages){
+    const up = () => {
+        if (numberPage < totalPages) {
             upPage()
         }
-     }
+    }
 
     const down = () => {
-        if(numberPage > 1){
+        if (numberPage > 1) {
             downPage()
         }
-     }
+    }
 
     return (
-        <div>
+        <div className="pagination">
             <p>Change characters</p>
             <p>Page {numberPage}/{totalPages}</p>
-            <Button variant="outlined" onClick={down}>down</Button>
-            <Button variant="outlined" onClick={up}> up </Button>
+            <div>
+                <Button variant="outlined" onClick={down}>down</Button>
+                <Button variant="outlined" onClick={up}> up </Button>
+            </div>
         </div>
     )
 }
